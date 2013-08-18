@@ -67,9 +67,6 @@ body {
 	}
 
 	.logo-container {
-		$ratio: (160 / 267);
-		height: $ratio * 267px;
-		
 		margin-top: 0;
 		margin-bottom: 0;
 		line-height: 0;
@@ -86,25 +83,24 @@ body {
 		// 	height: $ratio * 350px;
 		// 	width: 350px;
 		// }
-
-		@include device-width(8) {
-			text-align: left;
-		}
-
-		@include device-width(4) {
-			text-align: center;
-		}
 	}
 
 	.logo {
+		$ratio: (160 / 269);
 		z-index: 100;
 		@include transition(all 0.3s ease);
-		background: url(../images/logos/mixitdj_header.jpg) no-repeat;
-		background-size: contain;
-		width: 267px;
-		height: 100%;
+		background: url(../images/logos/mixitdj_header.png) no-repeat;
+		//background-size: contain;
+		width: 269px;
+		height: $ratio * 269px;
 		text-indent: -9999px;
 		display: inline-block;
+
+		@include device-width(6) {
+			background-size: contain;
+			width: 200px;
+			height: $ratio * 200px;	
+		}
 	}
 
 	.ecommerce-options {
@@ -352,9 +348,18 @@ body {
 }
 	
 #footer {
-	
+	background: #f9f9f9;
+
+	.home & {
+		background: none; 
+	}
+
 	@media print {
 		display: none;
+	}
+
+	@include device-width(6){
+		text-align: center;
 	}
 	
 	
@@ -365,17 +370,23 @@ body {
 	}
 
 	> .bottom {
-		background: #000;
-		a {
-			color: #FFF;
+		background: #FFF;
 
-			&:hover {
-				border-bottom: 1px solid #FFF;
-				text-decoration: none;
-			}
+		.home & {
+			background: #f9f9f9; 
 		}
+
+
+		// a {
+		// 	color: #FFF;
+
+		// 	&:hover {
+		// 		border-bottom: 1px solid #FFF;
+		// 		text-decoration: none;
+		// 	}
+		// }
 		> .inner {
-			padding: 0.5em 0;
+			padding: 0.3em 0;
 		}
 	}
 
@@ -389,8 +400,11 @@ body {
 
 	.contact-info {
 		width: 25em;
-		margin: 0 auto;
-		text-align: center;
+
+		.home & {
+			margin: 0 auto;
+			text-align: center;
+		}
 	}
 }
 
@@ -518,8 +532,16 @@ body {
 
 #page {
 	margin-top: 4em;
+
+	#content {
+		width: 65.3%;
+	}
 	img {
 		max-width: 100%;
 		height: auto;
+
+		&.size-full {
+			width: 100%;
+		}
 	}
 }

@@ -10,7 +10,7 @@
 			if(get_sub_field('column')):
 ?>
 			<div class="row" style="<?php the_sub_field('css'); ?>">
-				<?php if(is_home()): ?><div class="container"><?php endif; ?>
+				<?php if(is_front_page()): ?><div class="container"><?php endif; ?>
 					<div class="inner clearfix">
 					<?php if(get_sub_field('title')): ?>
 					<header class="row-header">
@@ -44,13 +44,13 @@
 					<?php endwhile; ?>
 					</div>
 					<hr />
-				<?php if(is_home()): ?></div><?php endif; ?>
+				<?php if(is_front_page()): ?></div><?php endif; ?>
 			</div>
 			<?php endif; ?>
 			<?php break; ?>
 		<?php case 'scroller':  ?>
 			<?php if ( get_sub_field('images')) :?>
-			<?php if(is_home()): ?><div class="container"><?php endif; ?>
+			<?php if(is_front_page()): ?><div class="container"><?php endif; ?>
 				<div class="scroller" data-auto-scroll="true" >
 					<div class="inner">
 						<div class="scroller-mask">
@@ -58,7 +58,7 @@
 							<?php $images = get_sub_field('images'); ?>
 							<?php foreach ($images as $image) : ?>
 							<div class="scroll-item <?php if($i == 0) echo 'current'; ?>" data-id="<?php echo $i;?>">
-								<img src="<?php echo $image['sizes']['slide']; ?>">
+								<img src="<?php echo $image['sizes']['slide']; ?>" class="scale">
 							</div>
 							<?php $i++; ?>
 							<?php endforeach; ?>
@@ -69,7 +69,7 @@
 						</div-->
 					</div>
 				</div><!-- #homepage-scroller -->
-			<?php if(is_home()): ?></div><?php endif; ?>
+			<?php if(is_front_page()): ?></div><?php endif; ?>
 			<?php endif; ?>
 
 			<?php break; ?>

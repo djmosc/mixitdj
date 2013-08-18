@@ -13,10 +13,10 @@
 		<div class="top">
 			<div class="inner container">
 				<div class="contact-info clearfix">
-					<div class="span five">
+					<div class="span five alpha">
 						<p><span class="uppercase">London</span><br /><a href="mailto:info@mixitdj.co.uk">info@mixitdj.co.uk</a><br />+ 074 4756 6126</p>
 					</div>
-					<div class="span five">
+					<div class="span five alpha">
 						<p><span class="uppercase">New Zealand</span><br /><a href="mailto:info@mixitdj.co.uk">info@mixitdj.co.uk</a><br />+ 64 21 0245 0147</p>
 					</div>
 				</div>
