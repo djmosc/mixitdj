@@ -1,9 +1,9 @@
 <?php
 /**
- * The template for displaying search forms in charlie_may
+ * The template for displaying search forms in mixitdj
  *
- * @package charlie_may
- * @since charlie_may 1.0
+ * @package mixitdj
+ * @since mixitdj 1.0
  */
 ?>
 <form method="get" class="search-form" action="<?php echo esc_url( home_url( '/' ) ); ?>" role="search">

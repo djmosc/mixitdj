@@ -4,8 +4,8 @@
  *
  * Displays all of the <head> section and everything up till <div id="main">
  *
- * @package charlie_may
- * @since charlie_may 1.0
+ * @package mixitdj
+ * @since mixitdj 1.0
  */
 ?>
 <!DOCTYPE html>
@@ -59,44 +59,15 @@
 <div id="wrap" class="hfeed site">
 	<?php do_action( 'before' ); ?>
 	<header id="header" role="banner">
-		<div class="top">
-			<div class="inner container">
-				<ul class="ecommerce-options clearfix">
-					<li class="account">
-						<a href="<?php echo get_permalink(get_field('account_page', 'options')); ?>" class="account-btn" ><?php echo get_the_title(get_field('account_page', 'options')); ?>
-						</a>
-					</li>
-					<?php if ( is_user_logged_in() ): ?>
-					<li class="logout">
-						<a href="<?php echo wp_logout_url('/'); ?>" class="logout-btn" >
-							<?php _e("Logout") ?>
-						</a>
-					</li>
-					<?php endif; ?>
-					<?php global $woocommerce; ?>
-					<li class="cart">
-						<a href="<?php echo get_permalink(get_field('cart_page', 'options')); ?>" class="cart-btn" ><?php echo get_the_title(get_field('cart_page', 'options')); ?></a>
-						&nbsp;&nbsp;<strong class="items"><?php echo sprintf(_n('%d', '%d', $woocommerce->cart->cart_contents_count, 'woothemes'), $woocommerce->cart->cart_contents_count);?></strong>
-					</li>
-				</ul>
-			</div>	
-		</div>
-		<div class="bottom">
-			<div class="inner container">
-				<h1 class="logo-container">
-					<a class="logo" href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
-				</h1>
-				<?php get_search_form(); ?>
-				<div class="navigation-container">
-					<a href="<?php echo get_permalink(get_field('cart_page', 'options')); ?>" class="cart-btn" >
-						<?php echo get_the_title(get_field('cart_page', 'options')); ?>:
-						<strong class="items"><?php echo sprintf(_n('%d', '%d', $woocommerce->cart->cart_contents_count, 'woothemes'), $woocommerce->cart->cart_contents_count);?></strong>
-					</a>
-					<button class="mobile-navigation-btn uppercase">menu <i aria-hidden="true" class="icon-arrow-down tiny"></i></button>
-					<nav role="navigation" class="site-navigation main-navigation">
-						<?php wp_nav_menu( array( 'theme_location' => 'primary_header', 'menu_class' => 'clearfix menu', 'container' => false ) ); ?>
-					</nav><!-- .site-navigation .main-navigation -->
-				</div>
+		<div class="inner container">
+			<h1 class="logo-container">
+				<a class="logo" href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+			</h1>
+			<div class="navigation-container">
+				<button class="mobile-navigation-btn uppercase">menu <i aria-hidden="true" class="icon-arrow-down tiny"></i></button>
+				<nav role="navigation" class="site-navigation main-navigation">
+					<?php wp_nav_menu( array( 'theme_location' => 'primary_header', 'menu_class' => 'clearfix menu', 'container' => false ) ); ?>
+				</nav><!-- .site-navigation .main-navigation -->
 			</div>
 		</div>
 	</header><!-- #header -->

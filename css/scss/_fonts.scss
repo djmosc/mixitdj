@@ -6,26 +6,26 @@
 	@include arial;
 }
 
-@mixin din {
-	font-family: 'DINNextLTW01-UltraLight 706122', Arial, Helvetica, sans-serif;
+@mixin didot {
+	font-family: 'Didot W01 Roman', Arial, Helvetica, sans-serif;
 }
 
-.din {
-	@include din;
+.didot {
+	@include didot;
 }
 
-@mixin avenir {
-	font-family: 'Avenir LT W01 55 Roman', Arial, Helvetica, sans-serif;
+@mixin century-gothic {
+	font-family: 'Century Gothic W01', Arial, Helvetica, sans-serif;
 }
 
-.avenir {
-	@include avenir;
+.century-gothic {
+	@include century-gothic;
 }
 
-@mixin novecento {
-	font-family: 'Novecento W00 Wide Bold', Arial, Helvetica, sans-serif;
+@mixin century-gothic-bold {
+	font-family: 'Century Gothic W01 Bold', Arial, Helvetica, sans-serif;
 }
 
-.novecento {
-	@include novecento;
+.century-gothic-bold {
+	@include century-gothic-bold;
 }

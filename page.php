@@ -7,15 +7,15 @@
  * and that other 'pages' on your WordPress site will use a
  * different template.
  *
- * @package charlie_may
- * @since charlie_may 1.0
+ * @package mixitdj
+ * @since mixitdj 1.0
  */
 
 get_header(); ?>
 
 <div id="page" class="container">
 	<?php while ( have_posts() ) : the_post(); ?>
-	<div id="content" <?php post_class(); ?>>
+	<div id="content" <?php post_class('span two-thirds alpha break-on-tablet'); ?>>
 		<?php if(!$post->post_content == ''): ?>
 		<div class="page-content">
 			<?php the_content(); ?>
@@ -26,6 +26,6 @@ get_header(); ?>
 		<?php endif; ?>
 	</div>
 	<?php endwhile; // end of the loop. ?>
-
+	<?php get_sidebar(); ?>
 </div><!-- #page -->
 <?php get_footer(); ?>

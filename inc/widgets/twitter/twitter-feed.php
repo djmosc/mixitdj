@@ -95,17 +95,17 @@ class Twitter_Feed extends WP_Widget {
  
         <footer class="widget-footer twitter-footer">
            	<p class="social-links">
-           		<?php if(get_charlie_may_option('facebook_url')): ?>
-           		<a href="<?php echo get_charlie_may_option('facebook_url'); ?>" class="facebook-btn" target="_blank"></a>
+           		<?php if(get_mixitdj_option('facebook_url')): ?>
+           		<a href="<?php echo get_mixitdj_option('facebook_url'); ?>" class="facebook-btn" target="_blank"></a>
 	           	<?php endif; ?>
-	       		<?php if(get_charlie_may_option('facebook_url')): ?>
-    			<a href="<?php echo get_charlie_may_option('twitter_url'); ?>" class="twitter-btn" target="_blank"></a>
+	       		<?php if(get_mixitdj_option('facebook_url')): ?>
+    			<a href="<?php echo get_mixitdj_option('twitter_url'); ?>" class="twitter-btn" target="_blank"></a>
 				<?php endif; ?>
-	       		<?php if(get_charlie_may_option('pinterest_url')): ?>
-    			<a href="<?php echo get_charlie_may_option('pinterest_url'); ?>" class="pinterest-btn" target="_blank"></a>
+	       		<?php if(get_mixitdj_option('pinterest_url')): ?>
+    			<a href="<?php echo get_mixitdj_option('pinterest_url'); ?>" class="pinterest-btn" target="_blank"></a>
 				<?php endif; ?>
-	       		<?php if(get_charlie_may_option('google_plus_url')): ?>
-    			<a href="<?php echo get_charlie_may_option('google_plus_url'); ?>" class="google-plus-btn" target="_blank"></a>
+	       		<?php if(get_mixitdj_option('google_plus_url')): ?>
+    			<a href="<?php echo get_mixitdj_option('google_plus_url'); ?>" class="google-plus-btn" target="_blank"></a>
 				<?php endif; ?>
 			</p>
         </footer>

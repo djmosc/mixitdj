@@ -4,54 +4,22 @@
  *
  * Contains the closing of the id=main div and all content after
  *
- * @package charlie_may
- * @since charlie_may 1.0
+ * @package mixitdj
+ * @since mixitdj 1.0
  */
 ?>
 	</div><!-- #main .site-main -->
-	<div id="social">
-		<div class="inner container">
-			<div class="span six alpha hide-on-mobile">
-
-				<ul class="social-links">
-					<li>
-						<h5 class="uppercase no-margin title"><?php _e("Join Us", THEME_NAME); ?></h5>
-					</li>
-					<li>
-						<a class="facebook-btn" href="<?php echo get_field('facebook_url', 'options');?>" target="_blank"></a>
-					</li>
-					<li>
-						<a class="twitter-btn" href="<?php echo get_field('twitter_url', 'options');?>" target="_blank"></a>
-					</li>
-					<li>
-						<a class="instagram-btn" href="<?php echo get_field('instagram_url', 'options');?>" target="_blank"></a>
-					</li>
-					<li>
-						<a class="tumblr-btn" href="<?php echo get_field('tumblr_url', 'options');?>" target="_blank"></a>
-					</li>
-					<li>
-						<a class="pinterest-btn" href="<?php echo get_field('pinterest_url', 'options');?>" target="_blank"></a>
-					</li>
-				</ul>
-			</div>
-			<div class="span three right omega alpha break-on-mobile">
-				<?php gravity_form(1, false, false); ?>
-			</div>
-
-		</div>
-	</div>
 	<footer id="footer" class="site-footer" role="contentinfo">
 		<div class="top">
-			<div class="container inner">
-				<h1 class="logo-container span three alpha">
-					<a class="logo" href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
-				</h1>
-				<nav role="navigation" class="span seven omega primary-footer-navigation">
-					<?php wp_nav_menu( array( 'theme_location' => 'primary_footer', 'menu_class' => 'clearfix menu', 'container' => false ) ); ?>
-				</nav>
-				<nav role="navigation" class="span three alpha secondary-footer-navigation">
-					<?php wp_nav_menu( array( 'theme_location' => 'secondary_footer', 'menu_class' => 'menu', 'container' => false ) ); ?>
-				</nav>
+			<div class="inner container">
+				<div class="contact-info clearfix">
+					<div class="span five">
+						<p><span class="uppercase">London</span><br /><a href="mailto:info@mixitdj.co.uk">info@mixitdj.co.uk</a><br />+ 074 4756 6126</p>
+					</div>
+					<div class="span five">
+						<p><span class="uppercase">New Zealand</span><br /><a href="mailto:info@mixitdj.co.uk">info@mixitdj.co.uk</a><br />+ 64 21 0245 0147</p>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div class="bottom">
@@ -64,21 +32,12 @@
 						<li>
 							<a class="twitter-btn" href="<?php echo get_field('twitter_url', 'options');?>" target="_blank"></a>
 						</li>
-						<li>
-							<a class="instagram-btn" href="<?php echo get_field('instagram_url', 'options');?>" target="_blank"></a>
-						</li>
-						<li>
-							<a class="tumblr-btn" href="<?php echo get_field('tumblr_url', 'options');?>" target="_blank"></a>
-						</li>
-						<li>
-							<a class="pinterest-btn" href="<?php echo get_field('pinterest_url', 'options');?>" target="_blank"></a>
-						</li>
 					</ul>
 				</div>
 				<div class="break-on-tablet span seven alpha omega">
 					<p class="small text-right">
-						<?php _e("&copy; 2013 Charlie May | All Rights Reserved | Site by", THEME_NAME);?>
-						<a href="http://parkandcube.com" target="_blank">Shini Park</a> &amp; <a href="http://www.mindblownmedia.com" target="_blank">Mind Blown Media</a>
+						<?php echo '&copy; '. date('Y').' '; _e("Mix it DJ | All Rights Reserved | Site by", THEME_NAME);?>
+						<a href="http://www.mindblownmedia.com" target="_blank">Mind Blown Media</a>
 					</p>
 				</div>
 			</div>

@@ -7,10 +7,10 @@
  * and that other 'pages' on your WordPress site will use a
  * different template.
  *
- * @package charlie_may
- * @since charlie_may 1.0
+ * @package mixitdj
+ * @since mixitdj 1.0
  */
 ?>
-<div id="sidebar" class="span two hide-on-tablet alpha">
+<div id="sidebar" class="span three hide-on-tablet omega right">
 	<?php dynamic_sidebar('default'); ?>
 </div>
