@@ -10,7 +10,7 @@
 			if(get_sub_field('column')):
 ?>
 			<div class="row" style="<?php the_sub_field('css'); ?>">
-				<div class="container">
+				<?php if(is_home()): ?><div class="container"><?php endif; ?>
 					<div class="inner clearfix">
 					<?php if(get_sub_field('title')): ?>
 					<header class="row-header">
@@ -44,13 +44,13 @@
 					<?php endwhile; ?>
 					</div>
 					<hr />
-				</div>
+				<?php if(is_home()): ?></div><?php endif; ?>
 			</div>
 			<?php endif; ?>
 			<?php break; ?>
 		<?php case 'scroller':  ?>
 			<?php if ( get_sub_field('images')) :?>
-			<div class="container">
+			<?php if(is_home()): ?><div class="container"><?php endif; ?>
 				<div class="scroller" data-auto-scroll="true" >
 					<div class="inner">
 						<div class="scroller-mask">
@@ -69,7 +69,7 @@
 						</div-->
 					</div>
 				</div><!-- #homepage-scroller -->
-			</div>
+			<?php if(is_home()): ?></div><?php endif; ?>
 			<?php endif; ?>
 
 			<?php break; ?>

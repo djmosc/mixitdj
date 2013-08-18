@@ -1253,6 +1253,12 @@ button {
 		}
 	}
 
+	> .inner {
+		padding: 4em 0;
+		margin-left: -10px;
+		margin-right: -10px;
+	}
+
 	.row-header {
 		margin: 0 0 4em 0;
 	}

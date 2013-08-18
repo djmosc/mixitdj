@@ -15,7 +15,7 @@ get_header(); ?>
 
 <div id="page" class="container">
 	<?php while ( have_posts() ) : the_post(); ?>
-	<div id="content" <?php post_class('span two-thirds alpha break-on-tablet'); ?>>
+	<div id="content" <?php post_class('span six alpha break-on-tablet'); ?>>
 		<?php if(!$post->post_content == ''): ?>
 		<div class="page-content">
 			<?php the_content(); ?>
