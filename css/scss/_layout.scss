@@ -157,19 +157,6 @@ body {
 				display: block;
 			}
 		}
-
-		.cart-btn {
-			display: none;
-			padding: 1em 2em;
-			text-transform: uppercase;
-			position: absolute;
-			top: 0;
-			right: 0;
-
-			@include device-width(6) {
-				display: inline-block;
-			}
-		}
 	}
 	
 
@@ -358,10 +345,6 @@ body {
 		display: none;
 	}
 
-	@include device-width(6){
-		text-align: center;
-	}
-	
 	
 	> .top {
 		> .inner {

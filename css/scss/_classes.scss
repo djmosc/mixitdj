@@ -1534,7 +1534,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 }
 
 label {
-	font-weight: bold;
+	font-weight: normal;
 	margin: 0 0 0.3em 0;
 	@include font-size(13);
 }
