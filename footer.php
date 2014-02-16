@@ -14,10 +14,10 @@
 			<div class="inner container">
 				<div class="contact-info clearfix">
 					<div class="span five alpha">
-						<p><span class="uppercase">London</span><br /><a href="mailto:info@mixitdj.co.uk">info@mixitdj.co.uk</a><br />+ 074 4756 6126</p>
+						<p><span class="uppercase"><a href="http://www.mixitdj.co.uk" alt="London DJs">London DJs</a></span><br />Cannon Street Road Shadwell<br /><a href="mailto:info@mixitdj.co.uk">info@mixitdj.co.uk</a><br />+ 44 74 4756 6126</p>
 					</div>
 					<div class="span five alpha">
-						<p><span class="uppercase">New Zealand</span><br /><a href="mailto:info@mixitdj.co.uk">info@mixitdj.co.uk</a><br />+ 64 21 0245 0147</p>
+						<p><span class="uppercase"><a href="http://www.mixitdj.co.nz" alt="New Zealand DJs">New Zealand DJs</a></span><br />Summer Street Ponsonby<br /><a href="mailto:info@mixitdj.co.nz">info@mixitdj.co.nz</a><br />+ 64 21 0245 0147</p>
 					</div>
 				</div>
 			</div>

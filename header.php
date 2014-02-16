@@ -63,6 +63,10 @@
 			<h1 class="logo-container">
 				<a class="logo" href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
 			</h1>
+			<?php if($location = get_field('location', 'options')): ?>
+			<h2 class="location"><?php echo $location ?></h2>
+			<h5 class="description"><?php bloginfo( 'description' ); ?></h5>
+			<?php endif; ?>
 			<div class="navigation-container">
 				<button class="mobile-navigation-btn uppercase">menu <i aria-hidden="true" class="icon-arrow-down tiny"></i></button>
 				<nav role="navigation" class="site-navigation main-navigation">
