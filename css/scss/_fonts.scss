@@ -14,6 +14,17 @@
 	@include didot;
 }
 
+
+@mixin didot-bold {
+	font-family: 'Didot W02 Bold', Arial, Helvetica, sans-serif;
+}
+
+.didot-bold {
+	@include didot-bold;
+}
+
+
+
 @mixin century-gothic {
 	font-family: 'Century Gothic W01', Arial, Helvetica, sans-serif;
 }

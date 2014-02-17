@@ -63,7 +63,7 @@ body {
 	}
 
 	> .inner {
-		padding: 3em 0 0 0;
+		padding: 3.4em 0 0 0;
 	}
 
 	.logo-container {
@@ -105,60 +105,24 @@ body {
 
 	.location {
 		text-align: center;
-		@include font-size(70);
-		margin: 0.4em 0 0.2em;
+		@include font-size(68);
+		margin: 0.35em 0 0.32em;
 		line-height: 0.8;
 		color: #000;
+		@include didot-bold;
 	}
 
 	.description {
 		@include century-gothic;
 		text-align: center;
+		@include font-size(19);
 	}
 
-	.ecommerce-options {
-		float: right;
-		margin: 0;
-		padding: 0;
-		list-style: none;
-		z-index: 400;
-
-		li {
-			float: left;
-			margin: 0 0 0 3em;
-
-			&.account, 
-			&.logout {
-				@include device-width(6) {
-					display: none;
-				}
-			}
-
-			&.cart {
-				.items {
-					color: #ff0000;
-				}
-			}
-
-			a {
-				@include font-size(8);
-				text-transform: uppercase;
-				letter-spacing: 2px;
-
-				&:hover {
-					border-bottom: 1px solid #FFF;
-				}
-			}
-		}
-		@include device-width(6) {
-			display: none;
-		}
-	}
 
 	.navigation-container {
 		background: #FFF;
 		position: relative;
-		margin: 2em 0 0 0;
+		margin: 2.5em 0 0 0;
 		border-top: 1px solid #000;
 		border-bottom: 1px solid #cecece;
 	
