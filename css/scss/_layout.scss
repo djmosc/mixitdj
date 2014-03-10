@@ -101,6 +101,10 @@ body {
 			width: 120px;
 			height: $ratio * 120px;	
 		}
+
+		&:hover {
+			opacity: 0.4;
+		}
 	}
 
 	.location {
